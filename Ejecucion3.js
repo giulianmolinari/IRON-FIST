@@ -34,9 +34,9 @@ function JUEGOlvl3() {
             Puntajelvl3 = 0
             Tiempolvl3 = 30
             function Contactos(){
-            Swal.fire({
+            Swal.fire({  //SE AGREGO UN USARIO MAS YA QUE FUERON 4 COLABORADORES PERO, SOLO HUBO 3 CONTACTOS
                 title : 'Felicitaciones por parte del <br> Grupo Omega<br><br><img src="IMG/Logo_Omega.png" width = "120px">',
-                html: '<b class="Aumentar puntos">Sabia que lo lograrias, nos salvaste de la destrucción, pero ahora nos espera otra lucha, esperemos volverte a ver jugando IRON FIST 2 en un futuro <br><br> CONTACTOS:<br><br> 71727432@certus.edu.pe <br><br> 71663265@certus.edu.pe <br><br> 70845813@certus.edu.pe <br> </b>',
+                html: '<b class="Aumentar puntos">Sabia que lo lograrias, nos salvaste de la destrucción, pero ahora nos espera otra lucha, esperemos volverte a ver jugando IRON FIST 2 en un futuro <br><br> CONTACTOS:<br><br> 71727432@certus.edu.pe <br><br> 71663265@certus.edu.pe <br><br> 70845813@certus.edu.pe <br> <br>70707070@certus.edu.pe<br> </b>',
                 icon: 'sucess',
                 confirmButtonText: '<span id="Pausear_musica">De acuerdo</span>',
                 width: '50%',

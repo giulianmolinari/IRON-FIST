@@ -27,6 +27,11 @@
   style="position: fixed; top: 10px; right: 10px; z-index: 9999; background: rgba(30,30,30,0.7); color: white; border: none; border-radius: 8px; padding: 8px 16px; font-family: 'Press Start 2P', cursive; font-size: 12px; cursor: pointer;">
   🖵 Pantalla Completa
 </button>
+<!-- Subir y bajar el nivel del brillo  -->
+<div style="position: fixed; top: 10px; left: 50%; transform: translateX(-50%); z-index: 999; background-image:url(IMG/Fondo_Espacio.gif); padding: 10px 20px; min-width: 200px; text-align: center;">
+  <label for="brillo">🌞 Brillo</label>
+  <input type="range" id="brillo" min="50" max="150" value="100">
+</div>
 
 <!--SECCION - CONTENEDOR GENERAL-------------------------------------------------------------->
 
@@ -413,6 +418,21 @@ preparando con la ayuda del resto de gobiernos, la iniciativa "IRON FIST", que c
     isFullscreen = !!document.fullscreenElement;
     fullscreenBtn.textContent = isFullscreen ? '🗗 Salir Pantalla Completa' : '🖵 Pantalla Completa';
   });
+
+ //Brillo de la pantalla 
+  const brilloSlider = document.getElementById("brillo");
+brilloSlider.addEventListener("input", function () {
+  document.body.style.filter = `brightness(${this.value}%)`;
+});
+
+// Pausar música al salir de pestaña, reanudar al volver
+ document.addEventListener("visibilitychange", function () {
+    if (document.hidden) {
+        musicaFondo.pause();
+    } else {
+        musicaFondo.play();
+    }
+});
 </script>
 </body>
 </html>
