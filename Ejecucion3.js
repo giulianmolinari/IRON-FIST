@@ -161,6 +161,12 @@ function JUEGOlvl3() {
     document.getElementById("Meteorito2lvl3").addEventListener('mouseover', Explulsar2lvl3)
     document.getElementById("Meteorito3lvl3").addEventListener('mouseover', Explulsar3lvl3)
     document.getElementById("Meteorito4lvl3").addEventListener('mouseover', Explulsar4lvl3)
+    function configurarEventos() {
+  const meteorito = document.getElementById("meteorito");
+  meteorito.removeEventListener("mouseover", expulsarMeteorito); // quitar anteriores
+  meteorito.addEventListener("mouseover", expulsarMeteorito);   // agregar nuevo
+}
+
 
 
     //ESTA ES LA FUNCION QUE EXPULSA AL METIRITO 1 DE MANERA ALEATORIA FUERA DEL MAPA
