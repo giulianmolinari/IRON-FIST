@@ -308,7 +308,8 @@ function DETENER_JUEGOlvl3() {
     //HACE QUE EL JUEGO SE DETENGA
     function PAUSElvl3() {
         //SI LLEGA A UNA EJECUTA LA FUNCION PAUSE
-        if (Activolvl3 == 1) {
+        if (Activolvl3 == 1)             {
+            juegoPausadolvl3 = true; //✅ 1 Evita lógica de nivel completado durante pausa #gabriel
             document.getElementById("Pausa_Pantallalvl3").style.display = "table"
             clearInterval(Restar_Tiempolvl3) //BORRAMOS LA FUNCION DE TIEMPO
             document.getElementById("Tiempolvl3").innerHTML = Tiempolvl3
@@ -334,7 +335,8 @@ function DETENER_JUEGOlvl3() {
             Activolvl3 = 2
         }
         //CAMBIAMOS EL VALOR PARA QUE AL VOLVER A DARLE CLICK EJECUTE LA CONDICIONAL DE REANUDAR
-        else { //LA FUNCION DE REANUDAR
+        else { 
+            juegoPausadolvl3 = false; // Se reanuda
             document.getElementById("Pausa_Pantallalvl3").style.display = "none"
             //BORRAMOS LA FUNCION, PARA QUE EL REANUDAR PUEDA EJECUTARSE DE NUEVO
             document.getElementById("Fondo_Ciberpunk").play()
