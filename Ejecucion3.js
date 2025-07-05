@@ -9,7 +9,7 @@ function JUEGOlvl3() {
 
     //FUNCION QUE REDUCE EL TIEMPO Y RESETEAL EL RESULTADO UNA VEZ LLEGUE A 0
     function Tiempo_Disminurlvl3() { 
-        Tiempolvl3--;
+        let Tiempolvl3--;
         document.getElementById("Tiempolvl3").innerHTML = Tiempolvl3
         if (Tiempolvl3 == 0) {
             Tiempolvl3 = 30
