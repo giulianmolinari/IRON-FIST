@@ -1174,3 +1174,96 @@ padding-bottom: 2%;}
         vertical-align: middle;
         font-family: 'Press Start 2P', cursive;
     }
+
+    /* ----------------------------- */
+/* ADAPTACIÓN RESPONSIVE MÓVIL */
+/* ----------------------------- */
+@media screen and (max-width: 768px) {
+
+    .Contenedorlvl3 {
+        width: 100%;
+        height: 100vh;
+        border: none;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .Cabezeralvl3 {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .Tiempolvl3,
+    .Puntajelvl3 {
+        width: 100%;
+        font-size: 16px;
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+
+    .Playlvl3 {
+        width: 60%;
+        height: 50px;
+        font-size: 12px;
+    }
+
+    .Textolvl3 {
+        font-size: 20px;
+        line-height: normal;
+    }
+
+    .Pauselvl3 {
+        width: 80%;
+        height: 50px;
+        font-size: 16px;
+        left: 10%;
+        top: 5%;
+    }
+
+    .Mensaje_Pauselvl3 {
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    #RGBlvl3 {
+        font-size: 100px;
+    }
+
+    .Limitelvl3 {
+        width: 5px;
+        left: 80%;
+        border-left: 3px dotted white;
+    }
+
+    .Planetalvl3 {
+        width: 60px;
+        top: 5%;
+        left: 70%;
+    }
+
+    .Ovnislvl3,
+    #Nodrizalvl3 {
+        width: 60px;
+    }
+
+    .Pantalla_navelvl3,
+    .Pantalla_Nodrizalvl3,
+    .Pantalla_nave2lvl3 {
+        top: auto;
+        bottom: 10%;
+    }
+
+    #Creditoslvl3,
+    #Proximolvl3 {
+        font-size: 18px;
+    }
+
+    #Proximolvl3 h4,
+    #Creditoslvl3 h3,
+    #Creditoslvl3 p {
+        font-size: 10px;
+        line-height: normal;
+    }
+}
