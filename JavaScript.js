@@ -21,7 +21,7 @@ Swal.fire({
 Tiempo = 71 //VARIBLE DE INICIO TIEMPO
 Puntaje = 0 //VARIABLE DE INICIO PUNTOS
 
-
+let Juegoterminado = false;
 
 //FUNCION DE NARRACIONES
 
@@ -105,7 +105,7 @@ function JUEGO(){
                 document.getElementById("NIVEL_01").style.display = "none"
                 document.getElementById("NIVEL_02").style.display = "block"}
                 document.getElementById("Tiempo").innerHTML = 70
-                document.getElementById("Puntaje").innerHTML = 0+"&nbsp;/&nbsp;"+27
+                document.getElementById("Puntaje").innerHTML = 5+"&nbsp;/&nbsp;"+5
                 document.getElementById("Triunfo").play()
                 document.getElementById("Fondo_Ciberpunk").pause()
                 document.getElementById("Puntos_sound").pause()
@@ -113,7 +113,7 @@ function JUEGO(){
                 document.getElementById("GANASTE_PANTALLA").style.display = "flex"
                 
                 function Ganaste_Pantalla(){
-
+                    Juegoterminado= true;
                     clearInterval(Reanudar_trayectoria)
                     clearInterval(Reanudar_trayectoria2)
                     clearInterval(Restar_Tiempo)
@@ -275,6 +275,8 @@ function JUEGO(){
                     //HACE QUE EL JUEGO SE DETENGA
                     function PAUSE(){ //Colocar la funcion de pausa y reanudar
                         //SI LLEGA A UNA EJECUTA LA FUNCION PAUSE
+                        if(Juegoterminado) 
+                            return;
                         if (Activo == 1){
                         
                         document.getElementById("Fondo_Ciberpunk").pause()
