@@ -324,4 +324,4 @@ function JUEGOlvl2(){
 
                         Activolvl2 = 1 } } } //CAMBIAMOS EL VALOR DE NUEVO A 1 PARA QUE AL SIGUIENTE CLICK SE EJECUTE EL PAUSE  S 
 
-                
+                          

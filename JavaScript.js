@@ -517,3 +517,6 @@ function Reloj_Tiempo(){
 Reloj_Tiempo()
 
 setInterval(Reloj_Tiempo, 1000)
+
+
+   

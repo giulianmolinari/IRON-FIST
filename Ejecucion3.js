@@ -161,12 +161,6 @@ function JUEGOlvl3() {
     document.getElementById("Meteorito2lvl3").addEventListener('mouseover', Explulsar2lvl3)
     document.getElementById("Meteorito3lvl3").addEventListener('mouseover', Explulsar3lvl3)
     document.getElementById("Meteorito4lvl3").addEventListener('mouseover', Explulsar4lvl3)
-    function configurarEventos() {
-  const meteorito = document.getElementById("meteorito");
-  meteorito.removeEventListener("mouseover", expulsarMeteorito); // quitar anteriores
-  meteorito.addEventListener("mouseover", expulsarMeteorito);   // agregar nuevo
-}
-
 
 
     //ESTA ES LA FUNCION QUE EXPULSA AL METIRITO 1 DE MANERA ALEATORIA FUERA DEL MAPA
@@ -342,7 +336,7 @@ function DETENER_JUEGOlvl3() {
         }
         //CAMBIAMOS EL VALOR PARA QUE AL VOLVER A DARLE CLICK EJECUTE LA CONDICIONAL DE REANUDAR
         else { 
-            juegoPausadolvl3 = false; // Se reanuda
+            juegoPausadolvl3 = false; // Se reanudañ
             document.getElementById("Pausa_Pantallalvl3").style.display = "none"
             //BORRAMOS LA FUNCION, PARA QUE EL REANUDAR PUEDA EJECUTARSE DE NUEVO
             document.getElementById("Fondo_Ciberpunk").play()
@@ -432,6 +426,10 @@ function DETENER_JUEGOlvl3() {
             //BORRAMOS LA FUNCION, PARA QUE EL REANUDAR PUEDA EJECUTARSE DE NUEVO
 
             Activolvl3 = 1
-        }
-    }
-} //CAMBIAMOS EL VALOR DE NUEVO A 1 PARA QUE AL SIGUIENTE CLICK SE EJECUTE EL PAUSE  S
+
+                 
+                }
+            }
+        } //CAMBIAMOS EL VALOR DE NUEVO A 1 PARA QUE AL SIGUIENTE CLICK SE EJECUTE EL PAUSE  S
+
+         

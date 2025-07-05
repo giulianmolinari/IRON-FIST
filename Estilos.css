@@ -13,6 +13,18 @@ html body{
  }
 
 
+ .BotonVolver {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #333;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
 /*CONTENEDOR DE TODOS LOS CONTENEDORES*/
 
 
@@ -301,7 +313,7 @@ padding-bottom: 2%;}
     .Play {
         background: purple; 
         color: white;
-        width: 18%; 
+        width: 20%; 
         height: 15%; 
         display: flex; 
         align-items: center; 
@@ -310,7 +322,7 @@ padding-bottom: 2%;}
         cursor: pointer;
         position: relative;  
         transition: 2s; 
-        top: 18%;
+        top: 10px;
         font-family: 'Press Start 2P', cursive; 
         margin: auto;
     }
