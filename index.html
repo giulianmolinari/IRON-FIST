@@ -22,6 +22,7 @@
   <input type="range" id="volumenUniversal" min="0" max="1" step="0.01" value="1" style="width:120px;">
 </div>
 
+
 <!-- Botón de pantalla completa en la esquina superior derecha -->
 <button id="fullscreenBtn" title="Pantalla completa"
   style="position: fixed; top: 10px; right: 10px; z-index: 9999; background: rgba(30,30,30,0.7); color: white; border: none; border-radius: 8px; padding: 8px 16px; font-family: 'Press Start 2P', cursive; font-size: 12px; cursor: pointer;">
@@ -386,6 +387,25 @@ preparando con la ayuda del resto de gobiernos, la iniciativa "IRON FIST", que c
     audio.volume = sliderUniversal.value;
   });
 
+  // Pausar/Reanudar audios cuando el usuario cambia de pestaña o sale del navegador
+ document.addEventListener('visibilitychange', () => {
+  if (document.hidden) {
+    audios.forEach(audio => {
+      if (!audio.paused) {
+        audio.dataset.wasPlaying = 'true';
+        audio.pause();
+      }
+    });
+  } else {
+    audios.forEach(audio => {
+      if (audio.dataset.wasPlaying === 'true') {
+        audio.play();
+        delete audio.dataset.wasPlaying;
+      }
+    });
+  }
+});
+
   // Pantalla completa
   const fullscreenBtn = document.getElementById('fullscreenBtn');
   let isFullscreen = false;
@@ -423,15 +443,6 @@ preparando con la ayuda del resto de gobiernos, la iniciativa "IRON FIST", que c
   const brilloSlider = document.getElementById("brillo");
 brilloSlider.addEventListener("input", function () {
   document.body.style.filter = `brightness(${this.value}%)`;
-});
-
-// Pausar música al salir de pestaña, reanudar al volver
- document.addEventListener("visibilitychange", function () {
-    if (document.hidden) {
-        musicaFondo.pause();
-    } else {
-        musicaFondo.play();
-    }
 });
 </script>
 </body>
