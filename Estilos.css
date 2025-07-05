@@ -602,14 +602,6 @@ padding-bottom: 2%;}
 
 
 
-/*RESPONSIVE */
-@media (max-width: 1196px){
-    .Imgane_metiorito{width: 47%; top: 16vw;}
-    .Boton_preparado{width: 38%;}
-    .Titulo-Jugar {font-size: 50px;}
-    .Contenedor_Historia{top: 15vw; font-size: 1.3vw;}
-    
-}
 
 
 /*LVL 2 ---------------------------------------------------------------------------------------------------------*/
@@ -1178,84 +1170,61 @@ padding-bottom: 2%;}
     /* ----------------------------- */
 /* ADAPTACIÓN RESPONSIVE MÓVIL */
 /* ----------------------------- */
-@media screen and (max-width: 768px) {
-    .Contenedorlvl3 {
-        width: 100vw;
-        height: 100vh;
-        border-width: 2px;
-    }
-
-    .Cabezeralvl3 {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .Pauselvl3 {
-        width: 60%;
-        height: 50px;
-        font-size: 12px;
-        left: 0;
-        top: 10px;
-        margin: auto;
-    }
-
-    .Tiempolvl3,
-    .Puntajelvl3 {
-        width: 100%;
-        height: auto;
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
         font-size: 14px;
-        flex-direction: row;
-        justify-content: space-between;
+    }
+
+    header, .header-buttons, .reglas {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-buttons button {
+        margin: 5px 0;
+        padding: 8px 16px;
+    }
+
+    .reglas {
         padding: 10px;
+        width: 90%;
     }
 
-    .Startlvl3 {
-        font-size: 14px;
-        padding: 20px;
+    .nivel, .game-container {
+        width: 95%;
+        max-width: 400px;
+        margin: 10px auto;
+        box-sizing: border-box;
     }
 
-    .Textolvl3 {
-        font-size: 20px;
-        top: -5%;
-        line-height: 30px;
+    .nivel img, .game-container img {
+        max-width: 100%;
+        height: auto;
     }
 
-    .Playlvl3 {
-        width: 60%;
-        height: 50px;
-        font-size: 10px;
+    .boton-pausa {
+        width: 90%;
+        font-size: 16px;
+        margin-top: 10px;
     }
 
-    #Dificultadlvl3 {
-        flex-direction: column;
-        gap: 10px;
-        top: 60%;
+    canvas {
+        width: 100% !important;
+        height: auto !important;
     }
 
-    #RGBlvl3 {
-        font-size: 80px;
+    .historia img {
+        max-width: 100%;
+        height: auto;
     }
 
-    .Limitelvl3 {
-        left: 80%;
-        width: 10px;
+    .reglas div {
+        margin-bottom: 15px;
     }
 
-    .Planetalvl3 {
-        width: 50px;
-    }
-
-    .Ovnislvl3,
-    #Nodrizalvl3 {
-        width: 60px;
-    }
-
-    .Mensaje_Pauselvl3 {
-        font-size: 20px;
-    }
-
-    #Creditoslvl3,
-    #Proximolvl3 {
-        font-size: 18px;
+    .footer {
+        font-size: 12px;
     }
 }
