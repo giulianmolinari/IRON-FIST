@@ -42,8 +42,6 @@ function JUEGOlvl3() {
                 width: '50%',
                 height: '80%',
                 timer: 100000,
-                
-                
                 timerProgressbar: true,
                 /*Funcion de cerrar la alerta*/
                 allowOutsideClick: true,
@@ -93,10 +91,10 @@ function JUEGOlvl3() {
 
             function Creditoslvl3() {
                 document.getElementById("Pantalla_creditoslvl3").style.background = "black"
-                document.getElementById("Creditoslvl3").style.top = "-15%"
-                document.getElementById("Creditoslvl3").style.transition = "10s"
+                document.getElementById("Creditoslvl3").style.top = "-10%"
+                document.getElementById("Creditoslvl3").style.transition = "15s"
                 document.getElementById("Proximolvl3").style.bottom = "-34%"
-                document.getElementById("Proximolvl3").style.transition = "15s"
+                document.getElementById("Proximolvl3").style.transition = "20s"
             }
             setTimeout(Creditoslvl3, 5000)
         }

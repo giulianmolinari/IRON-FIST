@@ -1109,7 +1109,7 @@ padding-bottom: 2%;}
         width: 100%;
         height: 100%;
         background: transparent;
-        transition: 2s;
+        transition: 5s;
     }
     
     #Creditoslvl3 {
@@ -1120,10 +1120,10 @@ padding-bottom: 2%;}
         justify-content: center;
         flex-direction: column;
         position: absolute;
-        top: -100%;
+        top: -120%;
         font-size: 26px;
         color: snow;
-        line-height: 8px;
+        line-height: 1.6;
     }
     
     #Proximolvl3 {
@@ -1148,10 +1148,12 @@ padding-bottom: 2%;}
     
     #Creditoslvl3 h3 {
         font-family: 'Press Start 2P', cursive;
+         margin-bottom: 10px;
     }
     
     #Creditoslvl3 p {
         font-family: 'Press Start 2P', cursive;
+         margin: 3px 0;
     }
     
     /*ESTILOS DEL BOTON DE PAUSE*/
